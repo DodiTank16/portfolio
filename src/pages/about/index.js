@@ -31,21 +31,25 @@ export const About = () => {
           <title> About | {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
+
+        {/* About me header */}
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
             <h1 className="display-4 mb-4">About me</h1>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
+
+        {/* Know More About Me */}
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">{dataabout.title}</h3>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
-              <p>{dataabout.aboutme_pera1}</p>
-              <p>{dataabout.aboutme_pera2}</p>
-              <p>{dataabout.aboutme_pera3}</p>
+              <p dangerouslySetInnerHTML={{ __html: dataabout.aboutme_pera1 }}></p>
+              <p dangerouslySetInnerHTML={{ __html: dataabout.aboutme_pera2 }}></p>
+              <p dangerouslySetInnerHTML={{ __html: dataabout.aboutme_pera3 }}></p>
             </div>
           </Col>
           <Col lg="5">
@@ -53,10 +57,12 @@ export const About = () => {
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
-              <p>{dataabout.aboutme_pera4}</p>
+              <p dangerouslySetInnerHTML={{ __html: dataabout.aboutme_pera4 }}></p>
             </div>
           </Col>
         </Row>
+
+        {/* Work Timline */}
         <Row className=" sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Work Timline</h3>
@@ -77,15 +83,15 @@ export const About = () => {
             </table>
           </Col>
         </Row>
+        {/* My Toolbox */}
         <Row className="sec_sp">
           <Col lg="5" className="d-flex flex-row justify-content-between">
-            <h3 className="color_sec py-4">Skills</h3>
-            {/* <h3 className="color_sec py-4">Languages</h3> */}
+            <h3 className="color_sec py-4">My Toolbox</h3>
           </Col>
 
           <Col lg="7" className="">
             <h3 className="color_sec py-4">Languages</h3>
-            <div className="d-flex flex-row flex-wrap gap-2 gap-sm-4 gap-md-3 gap-lg-2">
+            <div className="d-flex flex-row flex-wrap gap-3 gap-sm-4 gap-md-3 gap-lg-4">
               {skills_languages.map((skill, i) => {
                 let logo = skill.value;
                 return (
@@ -101,7 +107,7 @@ export const About = () => {
             </div>
 
             <h3 className="color_sec py-4">Frameworks and Databases</h3>
-            <div className="d-flex flex-row flex-wrap gap-2 gap-sm-4 gap-md-3 gap-lg-2">
+            <div className="d-flex flex-row flex-wrap gap-3 gap-sm-4 gap-md-3 gap-lg-2">
               {skills_frameworkDb.map((skill, i) => {
                 let logo = skill.value;
 
@@ -118,14 +124,14 @@ export const About = () => {
                     className="skill-item d-flex flex-column align-items-center text-center mb-3"
                   >
                     <h5 className="mb-2">{skill.name}</h5>
-                    <img src={logo} alt={skill.name} width={skill.name === "MongoDB" ? 150 : 80} height={skill.name === "MongoDB" ? 120 : 80} />
+                    <img src={logo} alt={skill.name} width={skill.name === "MongoDB" ? 150 : 80} height={skill.name === "MongoDB" ? 80 : 80} />
                   </div>
                 );
               })}
             </div>
 
             <h3 className="color_sec py-4">Tools</h3>
-            <div className="d-flex flex-row flex-wrap gap-2 gap-sm-4 gap-md-3 gap-lg-2">
+            <div className="d-flex flex-row flex-wrap gap-4 gap-sm-4 gap-md-5 gap-lg-5">
               {skills_tools.map((skill, i) => {
                 let logo = skill.value;
 
@@ -149,9 +155,10 @@ export const About = () => {
             </div>
           </Col>
         </Row>
+
         <Row className="sec_sp">
           <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+            <h3 className="color_sec py-4">Service Highlights</h3>
           </Col>
           <Col lg="7">
             {services.map((data, i) => {
