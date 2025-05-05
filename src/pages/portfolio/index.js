@@ -3,7 +3,8 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
-
+import WVLogo from "../../assets/images/WV.JPG";
+import PortfolioCard from "../../components/portfoliocard";
 export const Portfolio = () => {
   return (
     <HelmetProvider>
@@ -20,7 +21,7 @@ export const Portfolio = () => {
           </Col>
         </Row>
         <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
+          {/* {dataportfolio.map((data, i) => {
             return (
               <div key={i} className="po_item">
                 <img src={data.img} alt="" />
@@ -30,6 +31,9 @@ export const Portfolio = () => {
                 </div>
               </div>
             );
+          })} */}
+          {dataportfolio.map((data, i) => {
+            return <PortfolioCard key={i} data={data} />;
           })}
         </div>
       </Container>

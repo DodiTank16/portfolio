@@ -1,23 +1,31 @@
-import HTMLLogo from "./assets/images/htmlLogo.svg";
-import CSSLogo from "./assets/images/cssLogo.svg";
-import JavaScriptLogo from "./assets/images/javascriptLogo.svg";
-import ReactLogo from "./assets/images/reactLogo.svg";
-import NodeLogo from "./assets/images/nodeLogo.svg";
-import TypeScriptLogo from "./assets/images/typescriptLogo.svg";
-import MongoDBLogo from "./assets/images/mongoDBLogo.svg";
-import MySQLLogo from "./assets/images/mySQLLogo.svg";
-import TailwindLogo from "./assets/images/tailwindLogo.svg";
+import AWSLogo from "./assets/images/awsLogo.svg";
 import BootstrapLogo from "./assets/images/bootstrapLogo.svg";
-import VSCodeLogo from "./assets/images/vsCodeLogo.svg";
+import CSSLogo from "./assets/images/cssLogo.svg";
 import GitHubLogo from "./assets/images/githubLogo.svg";
 import GitLabLogo from "./assets/images/gitlabLogo.svg";
-import AWSLogo from "./assets/images/awsLogo.svg";
+import HTMLLogo from "./assets/images/htmlLogo.svg";
+import JavaScriptLogo from "./assets/images/javascriptLogo.svg";
+import MongoDBLogo from "./assets/images/mongoDBLogo.svg";
+import MySQLLogo from "./assets/images/mySQLLogo.svg";
+import NodeLogo from "./assets/images/nodeLogo.svg";
+import ReactLogo from "./assets/images/reactLogo.svg";
+import TailwindLogo from "./assets/images/tailwindLogo.svg";
+import TypeScriptLogo from "./assets/images/typescriptLogo.svg";
+import VSCodeLogo from "./assets/images/vsCodeLogo.svg";
+
+// Portfolio Images
+import NextJs1 from "../src/assets/images/NextJs/1.png"
+import NextJs2 from "../src/assets/images/NextJs/home.png"
+import NextJs3 from "../src/assets/images/NextJs/invoice.png"
+
+import AdvancedTodo1 from "../src/assets/images/AdvanceToDo/1.png"
+import AdvancedTodo2 from "../src/assets/images/AdvanceToDo/2.png"
+import AdvancedTodo3 from "../src/assets/images/AdvanceToDo/login.png"
 
 const logotext = "TANK";
 const meta = {
   title: "Dodi Tank",
-  description:
-    "I'm Dodi tank Web Devloper _ Full stack devloper,currently working in Ahmedabad",
+  description: "I'm Dodi tank Web Devloper _ Full stack devloper,currently working in Ahmedabad",
 };
 
 const introdata = {
@@ -174,77 +182,88 @@ const services = [
 
 const dataportfolio = [
   {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    name: "Next.js Dashboard",
+    img: [NextJs1, NextJs2, NextJs3],
+    description: "A dashboard application built with Next.js, showcasing dynamic routing and server-side rendering.",
+    link: "https://github.com/DodiTank16/nextjs-dashboard",
   },
   {
-    img: "https://picsum.photos/400/800/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    name: "Handshake Parallax Effect",
+    img: ["https://picsum.photos/400/800/?grayscale", "https://picsum.photos/400/?grayscale"],
+    description: "A parallax effect implementation created using CodeSandbox, demonstrating interactive UI elements.",
+    link: "https://github.com/DodiTank16/Handshake-Parallax-Effect",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    name: "AutoSuggestion",
+    img: ["https://picsum.photos/300/?grayscale", "https://picsum.photos/300/800/?grayscale"],
+    description: "An autocomplete feature that predicts user input, enhancing form usability and efficiency.",
+    link: "https://github.com/DodiTank16/autosuggestion",
   },
   {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    name: "React Node Mongo Auth",
+    img: ["https://picsum.photos/400/600/?grayscale", "https://picsum.photos/400/?grayscale"],
+    description: "A robust authentication system with role-based access control, email verification, and secure admin login.",
+    link: "https://github.com/DodiTank16/react-node-mongo-authentication-permissions",
   },
   {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    name: "Advanced Todo Application",
+    img: [AdvancedTodo1, AdvancedTodo2, AdvancedTodo3],
+    description: "A full-stack todo application with CRUD operations, user authentication, and drag-and-drop functionality.",
+    link: "https://github.com/DodiTank16/advanced-todo-application",
   },
   {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-
-  {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    name: "Image File Resizer",
+    img: ["https://picsum.photos/400/700/?grayscale", "https://picsum.photos/400/?grayscale"],
+    description: "A tool to resize image files efficiently before uploading, optimizing performance in React applications.",
+    link: "https://github.com/DodiTank16/image-file-resizer",
   },
   {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    name: "Shopping App MERN",
+    img: ["https://picsum.photos/400/600/?grayscale", "https://picsum.photos/400/?grayscale"],
+    description: "An e-commerce platform built using the MERN stack, featuring product listings and shopping cart functionality.",
+    link: "https://github.com/DodiTank16/Shopping-App-MERN",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    name: "JWT Auth",
+    img: ["https://picsum.photos/400/300/?grayscale", "https://picsum.photos/400/?grayscale"],
+    description: "A full-stack authentication system implementing JWT and Nodemailer for secure user management.",
+    link: "https://github.com/DodiTank16/JWT-Auth",
   },
   {
-    img: "https://picsum.photos/400/550/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    name: "Tinder Clone",
+    img: ["https://picsum.photos/400/?grayscale", "https://picsum.photos/400/?grayscale"],
+    description: "A clone of the Tinder application, replicating swipe functionality and user interactions.",
+    link: "https://github.com/DodiTank16/Tinder-Clone",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    name: "Complete RESTful API",
+    img: ["https://picsum.photos/400/550/?grayscale", "https://picsum.photos/400/?grayscale"],
+    description: "A comprehensive RESTful API built with Node.js, demonstrating CRUD operations and middleware integration.",
+    link: "https://github.com/DodiTank16/Complete-RESTful-API",
   },
   {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    name: "Shopping App Redux",
+    img: ["https://picsum.photos/400/700/?grayscale", "https://picsum.photos/400/?grayscale"],
+    description: "A shopping application utilizing Redux for state management, enhancing scalability and maintainability.",
+    link: "https://github.com/DodiTank16/Shopping-App-Redux",
+  },
+  {
+    name: "Lensart",
+    img: ["https://picsum.photos/400/500/?grayscale", "https://picsum.photos/400/?grayscale" ],
+    description: "A photography portfolio website showcasing high-resolution images and interactive galleries.",
+    link: "https://github.com/DodiTank16/Lensart",
+  },
+  {
+    name: "E-Learning Platform",
+    img: ["https://picsum.photos/400/400/?grayscale", "https://picsum.photos/400/?grayscale"],
+    description: "An online learning platform offering courses, quizzes, and progress tracking for students.",
+    link: "https://github.com/DodiTank16/E_Learning",
+  },
+  {
+    name: "IEMS",
+    img: ["https://picsum.photos/400/600/?grayscale", "https://picsum.photos/400/?grayscale"],
+    description: "An Inventory and Event Management System designed to streamline operations and resource allocation.",
+    link: "https://github.com/DodiTank16/iems",
   },
 ];
 
@@ -267,16 +286,7 @@ const socialprofils = {
   // twitter: "https://twitter.com",
 };
 export {
-  meta,
-  dataabout,
-  dataportfolio,
-  worktimeline,
-  skills_languages,
-  skills_frameworkDb,
-  skills_tools,
-  services,
-  introdata,
-  contactConfig,
-  socialprofils,
-  logotext,
+  contactConfig, dataabout,
+  dataportfolio, introdata, logotext, meta, services, skills_frameworkDb, skills_languages, skills_tools, socialprofils, worktimeline
 };
+

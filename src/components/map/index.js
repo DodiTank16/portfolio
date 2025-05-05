@@ -1,16 +1,15 @@
-import React, { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import React, { useEffect, useRef } from "react";
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoiZG9kaS10YW5rIiwiYSI6ImNtOWI5ZHEybDA3MmEybXNha3BnZGJzZnQifQ.-5OA4VXlJCu9rW4NU8nNYw";
+mapboxgl.accessToken = "pk.eyJ1IjoiZG9kaS10YW5rIiwiYSI6ImNtOWI5ZHEybDA3MmEybXNha3BnZGJzZnQifQ.-5OA4VXlJCu9rW4NU8nNYw";
 
-  const mapStyles = {
-    light: 'mapbox://styles/mapbox/light-v11',
-    dark: 'mapbox://styles/mapbox/dark-v11',
-  };
+const mapStyles = {
+  light: "mapbox://styles/mapbox/light-v11",
+  dark: "mapbox://styles/mapbox/dark-v11",
+};
 
-const WorldMapMapbox = ({ theme = 'light' }) => {
+const WorldMapMapbox = ({ theme = "light" }) => {
   const mapContainerRef = useRef(null);
   const mapRef = useRef(null);
 
@@ -28,9 +27,7 @@ const WorldMapMapbox = ({ theme = 'light' }) => {
     map.on("style.load", () => {
       // Insert the layer beneath any symbol layer.
       const layers = map.getStyle().layers;
-      const labelLayerId = layers.find(
-        (layer) => layer.type === "symbol" && layer.layout["text-field"]
-      ).id;
+      const labelLayerId = layers.find((layer) => layer.type === "symbol" && layer.layout["text-field"]).id;
 
       // The 'building' layer in the Mapbox Streets
       // vector tileset contains building height data
@@ -49,24 +46,8 @@ const WorldMapMapbox = ({ theme = 'light' }) => {
             // Use an 'interpolate' expression to
             // add a smooth transition effect to
             // the buildings as the user zooms in.
-            "fill-extrusion-height": [
-              "interpolate",
-              ["linear"],
-              ["zoom"],
-              15,
-              0,
-              15.05,
-              ["get", "height"],
-            ],
-            "fill-extrusion-base": [
-              "interpolate",
-              ["linear"],
-              ["zoom"],
-              15,
-              0,
-              15.05,
-              ["get", "min_height"],
-            ],
+            "fill-extrusion-height": ["interpolate", ["linear"], ["zoom"], 15, 0, 15.05, ["get", "height"]],
+            "fill-extrusion-base": ["interpolate", ["linear"], ["zoom"], 15, 0, 15.05, ["get", "min_height"]],
             "fill-extrusion-opacity": 0.6,
           },
         },
