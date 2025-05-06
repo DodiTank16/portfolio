@@ -22,6 +22,25 @@ import AdvancedTodo1 from "../src/assets/images/AdvanceToDo/1.png"
 import AdvancedTodo2 from "../src/assets/images/AdvanceToDo/2.png"
 import AdvancedTodo3 from "../src/assets/images/AdvanceToDo/login.png"
 
+import Handshake from "../src/assets/videos/Handshake.mp4"
+
+import AutoSuggestionHome from "../src/assets/images/Autosuggestion/Home.png"
+import AutoSuggestionSearch from "../src/assets/images/Autosuggestion/Searched.png"
+
+import ShoppingAppHome from "../src/assets/images/ShoppingApp/Home.png"
+import ShoppingAppSearch from "../src/assets/images/ShoppingApp/Listing.png"
+import ShoppingAppCart from "../src/assets/images/ShoppingApp/Cart.png"
+
+import TinderHome from "../src/assets/images/Tinder/Home.png"
+
+import ImageRezizerTool from "../src/assets/images/Image-Rezizer-tool.png"
+
+import FullstackLogin from "../src/assets/images/Fullstack/Login.png"
+import FullstackAdmin from "../src/assets/images/Fullstack/Admin-Reg.png"
+import FullstackHome from "../src/assets/images/Fullstack/Home.png"
+
+
+
 const logotext = "TANK";
 const meta = {
   title: "Dodi Tank",
@@ -188,20 +207,38 @@ const dataportfolio = [
     link: "https://github.com/DodiTank16/nextjs-dashboard",
   },
   {
+    name: "Shopping App MERN",
+    img: [ShoppingAppHome, ShoppingAppSearch, ShoppingAppCart],
+    description: "An e-commerce platform built using the MERN stack, featuring product listings and shopping cart functionality.",
+    link: "https://github.com/DodiTank16/Shopping-App-MERN",
+  },
+  {
+    name: "Tinder Clone",
+    img: [TinderHome],
+    description: "A clone of the Tinder application, replicating swipe functionality and user interactions.",
+    link: "https://github.com/DodiTank16/Tinder-Clone",
+  },
+  {
     name: "Handshake Parallax Effect",
-    img: ["https://picsum.photos/400/800/?grayscale", "https://picsum.photos/400/?grayscale"],
+    img: [Handshake],
     description: "A parallax effect implementation created using CodeSandbox, demonstrating interactive UI elements.",
     link: "https://github.com/DodiTank16/Handshake-Parallax-Effect",
   },
   {
+    name: "Image File Resizer",
+    img: [ImageRezizerTool],
+    description: "A tool to resize image files efficiently before uploading, optimizing performance in React applications.",
+    link: "https://github.com/DodiTank16/image-file-resizer",
+  },
+  {
     name: "AutoSuggestion",
-    img: ["https://picsum.photos/300/?grayscale", "https://picsum.photos/300/800/?grayscale"],
+    img: [AutoSuggestionHome,AutoSuggestionSearch],
     description: "An autocomplete feature that predicts user input, enhancing form usability and efficiency.",
     link: "https://github.com/DodiTank16/autosuggestion",
   },
   {
     name: "React Node Mongo Auth",
-    img: ["https://picsum.photos/400/600/?grayscale", "https://picsum.photos/400/?grayscale"],
+    img: [FullstackLogin, FullstackAdmin, FullstackHome],
     description: "A robust authentication system with role-based access control, email verification, and secure admin login.",
     link: "https://github.com/DodiTank16/react-node-mongo-authentication-permissions",
   },
@@ -212,40 +249,16 @@ const dataportfolio = [
     link: "https://github.com/DodiTank16/advanced-todo-application",
   },
   {
-    name: "Image File Resizer",
-    img: ["https://picsum.photos/400/700/?grayscale", "https://picsum.photos/400/?grayscale"],
-    description: "A tool to resize image files efficiently before uploading, optimizing performance in React applications.",
-    link: "https://github.com/DodiTank16/image-file-resizer",
-  },
-  {
-    name: "Shopping App MERN",
-    img: ["https://picsum.photos/400/600/?grayscale", "https://picsum.photos/400/?grayscale"],
-    description: "An e-commerce platform built using the MERN stack, featuring product listings and shopping cart functionality.",
-    link: "https://github.com/DodiTank16/Shopping-App-MERN",
-  },
-  {
     name: "JWT Auth",
     img: ["https://picsum.photos/400/300/?grayscale", "https://picsum.photos/400/?grayscale"],
     description: "A full-stack authentication system implementing JWT and Nodemailer for secure user management.",
     link: "https://github.com/DodiTank16/JWT-Auth",
   },
   {
-    name: "Tinder Clone",
-    img: ["https://picsum.photos/400/?grayscale", "https://picsum.photos/400/?grayscale"],
-    description: "A clone of the Tinder application, replicating swipe functionality and user interactions.",
-    link: "https://github.com/DodiTank16/Tinder-Clone",
-  },
-  {
     name: "Complete RESTful API",
     img: ["https://picsum.photos/400/550/?grayscale", "https://picsum.photos/400/?grayscale"],
     description: "A comprehensive RESTful API built with Node.js, demonstrating CRUD operations and middleware integration.",
     link: "https://github.com/DodiTank16/Complete-RESTful-API",
-  },
-  {
-    name: "Shopping App Redux",
-    img: ["https://picsum.photos/400/700/?grayscale", "https://picsum.photos/400/?grayscale"],
-    description: "A shopping application utilizing Redux for state management, enhancing scalability and maintainability.",
-    link: "https://github.com/DodiTank16/Shopping-App-Redux",
   },
   {
     name: "Lensart",

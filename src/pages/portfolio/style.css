@@ -37,7 +37,10 @@
     max-width: 100%;
     /* filter: grayscale(100%); */
 }
-
+.po_item video {
+    max-width: 100%;
+    /* filter: grayscale(100%); */
+}
 .po_item .content {
     position: absolute;
     height: 0;

@@ -7,15 +7,24 @@ const PortfolioCard = ({ data }) => {
     const interval = setInterval(() => {
       setCurrentImgIndex((prev) => (prev + 1) % data.img.length);
     }, 5000);
+
     return () => clearInterval(interval);
   }, [data.img]);
 
   return (
+    <>
     <div className="po_item">
+    <p>{data.name}</p>
       <div className="slideshow">
-        {data.img.map((src, index) => (
-          <img key={index} src={src} alt={data.name} className={index === currentImgIndex ? "active" : ""} />
-        ))}
+        {data.name === "Handshake Parallax Effect" ? (
+          <video autoPlay loop muted>
+            <source src={data.img[0]} type="video/mp4"  />
+          </video>
+        ) : (
+          data.img.map((src, index) => (
+            <img key={index} src={src} alt={data.name} className={index === currentImgIndex ? "active" : ""} />
+          ))
+        )}
       </div>
       <div className="content">
         <p>{data.description}</p>
@@ -24,6 +33,7 @@ const PortfolioCard = ({ data }) => {
         </a>
       </div>
     </div>
+    </>
   );
 };
 
