@@ -290,20 +290,19 @@ const dataportfolio = [
 ];
 
 const contactConfig = {
-  YOUR_EMAIL: "tank.dodi@gmail.com",
-  YOUR_FONE: "+91 99047 77068",
+  YOUR_EMAIL: process.env.EMAILADDRESS,
+  YOUR_FONE: process.env.EMAILPHONE,
   description:
     "Got an idea, a project, or just want to connect? I'm always up for a good tech chat or collaboration. Whether it's building full-stack apps or solving tough bugs — let's make it happen!",
-  YOUR_SERVICE_ID: "service_r5oujpe",
-  YOUR_TEMPLATE_ID: "template_61utp8r",
-  YOUR_USER_ID: "6qPbE4-kU5jEYSEMG",
+  YOUR_SERVICE_ID: process.env.EMAILJS_SERVICE_ID,
+  YOUR_TEMPLATE_ID: process.env.EMAILJS_TEMPLATE_ID,
+  YOUR_USER_ID: process.env.EMAILJS_USER_ID,
 };
 
 const socialprofils = {
   github: "https://github.com/DodiTank16",
-  // facebook: "https://facebook.com",
   linkedin: "https://in.linkedin.com/in/doditank",
-  // twitter: "https://twitter.com",
+
 };
 export {
   contactConfig,
