@@ -19,7 +19,7 @@ export const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormdata({ loading: true });
+    setFormdata({ loading: true, message:"" });
 
     const templateParams = {
       from_name: formData.email,
@@ -33,19 +33,28 @@ export const ContactUs = () => {
         console.log(result.text);
         setFormdata({
           loading: false,
-          alertmessage: "SUCCESS! ,Thankyou for your messege",
+          alertmessage: "Thanks for reaching out! Your message has been sent successfully. I'll get back to you as soon as possible.",
           variant: "success",
           show: true,
+        });
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
         });
       },
       (error) => {
         console.log(error.text);
         setFormdata({
-          alertmessage: `Faild to send!,${error.text}`,
+          alertmessage: "Oops! Something went wrong while sending your message. Please try again later",
           variant: "danger",
           show: true,
         });
-        document.getElementsByClassName("co_alert")[0].scrollIntoView();
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
       }
     );
   };

@@ -14,32 +14,37 @@ import TypeScriptLogo from "./assets/images/typescriptLogo.svg";
 import VSCodeLogo from "./assets/images/vsCodeLogo.svg";
 
 // Portfolio Images
-import NextJs1 from "../src/assets/images/NextJs/1.png"
-import NextJs2 from "../src/assets/images/NextJs/home.png"
-import NextJs3 from "../src/assets/images/NextJs/invoice.png"
+import NextJs1 from "../src/assets/images/NextJs/1.png";
+import NextJs2 from "../src/assets/images/NextJs/home.png";
+import NextJs3 from "../src/assets/images/NextJs/invoice.png";
 
-import AdvancedTodo1 from "../src/assets/images/AdvanceToDo/1.png"
-import AdvancedTodo2 from "../src/assets/images/AdvanceToDo/2.png"
-import AdvancedTodo3 from "../src/assets/images/AdvanceToDo/login.png"
+import AdvancedTodo1 from "../src/assets/images/AdvanceToDo/1.png";
+import AdvancedTodo2 from "../src/assets/images/AdvanceToDo/2.png";
+import AdvancedTodo3 from "../src/assets/images/AdvanceToDo/login.png";
 
-import Handshake from "../src/assets/videos/Handshake.mp4"
+import Handshake from "../src/assets/videos/Handshake.mp4";
 
-import AutoSuggestionHome from "../src/assets/images/Autosuggestion/Home.png"
-import AutoSuggestionSearch from "../src/assets/images/Autosuggestion/Searched.png"
+import AutoSuggestionHome from "../src/assets/images/Autosuggestion/Home.png";
+import AutoSuggestionSearch from "../src/assets/images/Autosuggestion/Searched.png";
 
-import ShoppingAppHome from "../src/assets/images/ShoppingApp/Home.png"
-import ShoppingAppSearch from "../src/assets/images/ShoppingApp/Listing.png"
-import ShoppingAppCart from "../src/assets/images/ShoppingApp/Cart.png"
+import ShoppingAppHome from "../src/assets/images/ShoppingApp/Home.png";
+import ShoppingAppSearch from "../src/assets/images/ShoppingApp/Listing.png";
+import ShoppingAppCart from "../src/assets/images/ShoppingApp/Cart.png";
 
-import TinderHome from "../src/assets/images/Tinder/Home.png"
+import TinderHome from "../src/assets/images/Tinder/Home.png";
 
-import ImageRezizerTool from "../src/assets/images/Image-Rezizer-tool.png"
+import ImageRezizerTool from "../src/assets/images/Image-Rezizer-tool.png";
 
-import FullstackLogin from "../src/assets/images/Fullstack/Login.png"
-import FullstackAdmin from "../src/assets/images/Fullstack/Admin-Reg.png"
-import FullstackHome from "../src/assets/images/Fullstack/Home.png"
+import FullstackLogin from "../src/assets/images/Fullstack/Login.png";
+import FullstackAdmin from "../src/assets/images/Fullstack/Admin-Reg.png";
+import FullstackHome from "../src/assets/images/Fullstack/Home.png";
 
+import FullStackAuthentication from "../src/assets/images/full-stack-authentication.jpg";
 
+import RestApi from "../src/assets/images/REST-API.png";
+
+import ELearningPlatform from "../src/assets/images/e-learning-platform.jpg";
+import IEMS from "../src/assets/images/IEMS.png";
 
 const logotext = "TANK";
 const meta = {
@@ -201,7 +206,7 @@ const services = [
 
 const dataportfolio = [
   {
-    name: "Next.js Dashboard",
+    name: "Next JS Dashboard",
     img: [NextJs1, NextJs2, NextJs3],
     description: "A dashboard application built with Next.js, showcasing dynamic routing and server-side rendering.",
     link: "https://github.com/DodiTank16/nextjs-dashboard",
@@ -231,8 +236,8 @@ const dataportfolio = [
     link: "https://github.com/DodiTank16/image-file-resizer",
   },
   {
-    name: "AutoSuggestion",
-    img: [AutoSuggestionHome,AutoSuggestionSearch],
+    name: "Auto Suggestion",
+    img: [AutoSuggestionHome, AutoSuggestionSearch],
     description: "An autocomplete feature that predicts user input, enhancing form usability and efficiency.",
     link: "https://github.com/DodiTank16/autosuggestion",
   },
@@ -250,32 +255,36 @@ const dataportfolio = [
   },
   {
     name: "JWT Auth",
-    img: ["https://picsum.photos/400/300/?grayscale", "https://picsum.photos/400/?grayscale"],
+    img: [FullStackAuthentication],
     description: "A full-stack authentication system implementing JWT and Nodemailer for secure user management.",
     link: "https://github.com/DodiTank16/JWT-Auth",
   },
   {
     name: "Complete RESTful API",
-    img: ["https://picsum.photos/400/550/?grayscale", "https://picsum.photos/400/?grayscale"],
+    img: [RestApi],
     description: "A comprehensive RESTful API built with Node.js, demonstrating CRUD operations and middleware integration.",
     link: "https://github.com/DodiTank16/Complete-RESTful-API",
   },
   {
     name: "Lensart",
-    img: ["https://picsum.photos/400/500/?grayscale", "https://picsum.photos/400/?grayscale" ],
+    img: [
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+      "https://images.unsplash.com/photo-1623282033815-40b05d96c903",
+    ],
     description: "A photography portfolio website showcasing high-resolution images and interactive galleries.",
     link: "https://github.com/DodiTank16/Lensart",
   },
   {
     name: "E-Learning Platform",
-    img: ["https://picsum.photos/400/400/?grayscale", "https://picsum.photos/400/?grayscale"],
-    description: "An online learning platform offering courses, quizzes, and progress tracking for students.",
+    img: [ELearningPlatform, "https://images.unsplash.com/photo-1555066931-4365d14bab8c"],
+    description:
+      "This web app helps users easily find high-quality YouTube videos related to their field. By searching a topic, users get curated, department-wise content to learn efficiently from the best available resources.",
     link: "https://github.com/DodiTank16/E_Learning",
   },
   {
     name: "IEMS",
-    img: ["https://picsum.photos/400/600/?grayscale", "https://picsum.photos/400/?grayscale"],
-    description: "An Inventory and Event Management System designed to streamline operations and resource allocation.",
+    img: [IEMS],
+    description: "A system designed for exam coordinators to efficiently manage internal exams and generate essential reports",
     link: "https://github.com/DodiTank16/iems",
   },
 ];
@@ -285,11 +294,9 @@ const contactConfig = {
   YOUR_FONE: "+91 99047 77068",
   description:
     "Got an idea, a project, or just want to connect? I'm always up for a good tech chat or collaboration. Whether it's building full-stack apps or solving tough bugs — let's make it happen!",
-  // creat an emailjs.com account
-  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: "service_id",
-  YOUR_TEMPLATE_ID: "template_id",
-  YOUR_USER_ID: "user_id",
+  YOUR_SERVICE_ID: "service_r5oujpe",
+  YOUR_TEMPLATE_ID: "template_61utp8r",
+  YOUR_USER_ID: "6qPbE4-kU5jEYSEMG",
 };
 
 const socialprofils = {
@@ -299,7 +306,16 @@ const socialprofils = {
   // twitter: "https://twitter.com",
 };
 export {
-  contactConfig, dataabout,
-  dataportfolio, introdata, logotext, meta, services, skills_frameworkDb, skills_languages, skills_tools, socialprofils, worktimeline
+  contactConfig,
+  dataabout,
+  dataportfolio,
+  introdata,
+  logotext,
+  meta,
+  services,
+  skills_frameworkDb,
+  skills_languages,
+  skills_tools,
+  socialprofils,
+  worktimeline,
 };
-

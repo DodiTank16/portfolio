@@ -14,7 +14,7 @@ const PortfolioCard = ({ data }) => {
   return (
     <>
     <div className="po_item">
-    <p>{data.name}</p>
+   
       <div className="slideshow">
         {data.name === "Handshake Parallax Effect" ? (
           <video autoPlay loop muted>
@@ -27,9 +27,10 @@ const PortfolioCard = ({ data }) => {
         )}
       </div>
       <div className="content">
+      <p>{data.name}</p>
         <p>{data.description}</p>
         <a href={data.link} target="_blank" rel="noopener noreferrer">
-          view project
+          Check It Out
         </a>
       </div>
     </div>

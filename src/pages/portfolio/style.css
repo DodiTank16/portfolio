@@ -90,10 +90,12 @@
     padding: 4px 8px;
     text-align: center;
     font-size: 1rem;
+    text-decoration: none;
+
 }
 
 .po_item .content a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .po_item .slideshow {
