@@ -1,12 +1,12 @@
 import * as emailjs from "emailjs-com";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Alert, Col, Container, Row } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Map from "../../components/map";
 import { contactConfig, meta } from "../../content_option";
 import "./style.css";
 
-export const ContactUs = () => {
+const ContactUs = () => {
   const [formData, setFormdata] = useState({
     email: "",
     name: "",
@@ -19,7 +19,7 @@ export const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormdata({ loading: true, message:"" });
+    setFormdata({ loading: true, message: "" });
 
     const templateParams = {
       from_name: formData.email,
@@ -173,3 +173,5 @@ export const ContactUs = () => {
     </HelmetProvider>
   );
 };
+
+export default ContactUs;

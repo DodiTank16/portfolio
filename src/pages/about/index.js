@@ -20,7 +20,7 @@ import VercelLogo from "../../assets/images/vercelLogo.svg";
 import VercelLogoDark from "../../assets/images/vercelLogo-dark.svg";
 import { ThemeContext } from "../../context/ThemeContext";
 
-export const About = () => {
+const About = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
@@ -175,3 +175,5 @@ export const About = () => {
     </HelmetProvider>
   );
 };
+
+export default About;

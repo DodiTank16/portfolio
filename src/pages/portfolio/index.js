@@ -1,11 +1,10 @@
-import React from "react";
-import "./style.css";
+import { Col, Container, Row } from "react-bootstrap";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col } from "react-bootstrap";
-import { dataportfolio, meta } from "../../content_option";
-import WVLogo from "../../assets/images/WV.JPG";
 import PortfolioCard from "../../components/portfoliocard";
-export const Portfolio = () => {
+import { dataportfolio, meta } from "../../content_option";
+import "./style.css";
+
+const Portfolio = () => {
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -40,3 +39,5 @@ export const Portfolio = () => {
     </HelmetProvider>
   );
 };
+
+export default Portfolio;

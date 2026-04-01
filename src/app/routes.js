@@ -1,33 +1,38 @@
-import React from "react";
-import { Route, Routes} from "react-router-dom";
-import withRouter from "../hooks/withRouter"
-import { Home } from "../pages/home";
-import { Portfolio } from "../pages/portfolio";
-import { ContactUs } from "../pages/contact";
-import { About } from "../pages/about";
-import { Socialicons } from "../components/socialicons";
+import { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { Socialicons } from "../components/socialicons";
+import withRouter from "../hooks/withRouter";
+
+const Home = lazy(() => import("../pages/home"));
+const About = lazy(() => import("../pages/about"));
+const Portfolio = lazy(() => import("../pages/portfolio"));
+const ContactUs = lazy(() => import("../pages/contact"));
 
 const AnimatedRoutes = withRouter(({ location }) => (
-  <TransitionGroup>
-    <CSSTransition
-      key={location.key}
-      timeout={{
-        enter: 400,
-        exit: 400,
-      }}
-      classNames="page"
-      unmountOnExit
-    >
-      <Routes location={location}>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
-    </CSSTransition>
-  </TransitionGroup>
+  <div className="page__transition__wrapper">
+    <TransitionGroup>
+      <CSSTransition
+        key={location.key}
+        timeout={{
+          enter: 900,
+          exit: 500,
+        }}
+        classNames="page"
+        unmountOnExit
+      >
+        <Suspense fallback={<div className="page__loader" />}>
+          <Routes location={location}>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </Suspense>
+      </CSSTransition>
+    </TransitionGroup>
+  </div>
 ));
 
 function AppRoutes() {
