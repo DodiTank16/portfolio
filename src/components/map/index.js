@@ -2,7 +2,7 @@ import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import React, { useEffect, useRef } from "react";
 
-mapboxgl.accessToken = "pk.eyJ1IjoiZG9kaS10YW5rIiwiYSI6ImNtOWI5ZHEybDA3MmEybXNha3BnZGJzZnQifQ.-5OA4VXlJCu9rW4NU8nNYw";
+mapboxgl.accessToken = process.env.MAPBOX_ACCESS_TOKEN;
 
 const mapStyles = {
   light: "mapbox://styles/mapbox/light-v11",
