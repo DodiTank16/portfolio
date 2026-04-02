@@ -30,7 +30,6 @@ const ContactUs = () => {
 
     emailjs.send(contactConfig.YOUR_SERVICE_ID, contactConfig.YOUR_TEMPLATE_ID, templateParams, contactConfig.YOUR_USER_ID).then(
       (result) => {
-        console.log(result.text);
         setFormdata({
           loading: false,
           alertmessage: "Thanks for reaching out! Your message has been sent successfully. I'll get back to you as soon as possible.",
@@ -44,7 +43,6 @@ const ContactUs = () => {
         });
       },
       (error) => {
-        console.log(error.text);
         setFormdata({
           alertmessage: "Oops! Something went wrong while sending your message. Please try again later",
           variant: "danger",

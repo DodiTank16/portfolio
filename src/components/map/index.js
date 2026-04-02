@@ -65,7 +65,7 @@ const WorldMapMapbox = ({ theme = "light" }) => {
       .addTo(map);
 
     return () => map.remove();
-  }, []);
+  }, [theme]);
 
   useEffect(() => {
     if (mapRef.current && mapRef.current.isStyleLoaded()) {
